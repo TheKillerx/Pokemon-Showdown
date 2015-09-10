@@ -52,7 +52,7 @@ var commands = exports.commands = {
 			buffer.push((Config.groups[r] ? Config.groups[r].name + "s (" + r + ")" : r) + ":\n" + rankLists[r].sortBy(toId).join(", "));
 		});
 
-		if (!buffer.length) buffer = "This server has no global authority.";
+		if (!buffer.length) buffer = "This server has no staff.";
 		connection.popup(buffer.join("\n\n"));
 	},
 
